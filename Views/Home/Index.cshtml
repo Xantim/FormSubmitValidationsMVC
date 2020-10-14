@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model User
+}
+
+<body>
+    <form class="col-5" asp-action="Submit" asp-controller="Home" method="Post">
+        <label asp-for="FirstName"></label><br>
+        <span class="alert-danger" asp-validation-for="FirstName"></span>
+        <input asp-for="FirstName"><br> 
+        
+    
+        <label asp-for="LastName"></label>
+        <span class="alert-danger" asp-validation-for="LastName"></span><br>
+        <input asp-for="LastName"><br>
+
+        <label asp-for="Age"></label>
+        <span class="alert-danger" asp-validation-for="Age"></span><br>
+        <input asp-for="Age"><br>
+
+        <label asp-for="Email"></label>
+        <span class="alert-danger" asp-validation-for="Email"></span><br>
+        <input asp-for="Email"><br>
+
+        <label asp-for="Password"></label>
+        <span class="alert-danger" asp-validation-for="Password"></span><br>
+        <input asp-for="Password"><br>
+
+        <input type="submit" value="create user" class="btn btn-primary mt-2"> 
+   
+    </form>
+</body>
+
